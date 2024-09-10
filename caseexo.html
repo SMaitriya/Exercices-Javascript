@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Utilisation de switch et de l'objet Date</title>
+    <meta charset="UTF-8">
+    <script>
+
+        function jourDeLaSemaine() {
+
+            var aujourdhui = new Date;
+
+
+            numjour = aujourdhui.getDay();
+            var jourfrancais;
+
+
+
+            switch (numjour) {
+                case 0: jourfrancais = "dimanche"; break;
+                case 1: jourfrancais = "Lundi"; break;
+                case 2: jourfrancais = "Mardi"; break;
+                case 3: jourfrancais = "Mercredi"; break;
+                case 4: jourfrancais = "Jeudi"; break;
+                case 5: jourfrancais = "Vendredi"; break;
+                case 6: jourfrancais = "Samedi"; break;
+            }
+
+            alert("nous somme le " + jourfrancais);
+
+            // OR
+
+            jourfrancais = ["dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"][numjour];
+            alert("Nous sommes " + jourfrancais + ".");
+
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h1>Utilisation de switch et de l'objet Date</h1>
+
+    <p>Cliquez sur le bouton pour lancer la fonction&nbsp;: <button onclick="jourDeLaSemaine()">Lancer la
+            fonction</button></p>
+
+</body>
+
+</html>
