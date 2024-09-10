@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>Méthodes des tableaux</title>
+<script>
+
+const fibo = [1,1,2,3,5,8];
+
+console.log(fibo);
+
+fibo.unshift(0);
+fibo.push(13);
+
+console.log(fibo);
+
+const fibo2 = fibo.map(x => x%4);
+
+console.log(fibo2);
+
+fibo2.sort((a,b) => a-b);
+
+console.log(fibo2);
+
+
+
+
+
+function go(){
+
+
+}
+
+
+</script>
+</head>
+<body>
+
+<button onclick="go()">Lancement</button>
+
+</body>
+</html>
