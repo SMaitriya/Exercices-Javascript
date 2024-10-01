@@ -8,7 +8,7 @@
 
         let tab = [-2, 1, 4];
 
-        const soustrait = (x) => (x => 0) ? x - 2 : "nombre négatif!";
+        const soustrait = (x) => (x >= 0) ? x - 2 : "nombre négatif!";
 
         function affiche() {
             alert(soustrait(tab[0]));
