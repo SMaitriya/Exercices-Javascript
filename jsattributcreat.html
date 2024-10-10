@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<title>Ajout / Suppression d'éléments</title>
+<meta charset="UTF-8">
+<script>
+	
+	/*function ajout()
+		{
+
+            list = document.getElementById("listecommissions");
+            newli = document.createElement("li");
+            text = document.createTextNode("lalala");
+            newli.appendChild(text);
+            list.appendChild(newli);
+            
+
+
+		
+		}*/
+
+        function ajouter(){
+            list = document.getElementById("listecommissions");
+            newli = document.createElement("li");
+
+            text = document.getElementById("texte").value;
+
+
+            newli.appendChild(document.createTextNode(text));
+            list.appendChild(newli);
+
+
+
+
+
+        }
+
+        function supprimer() {
+            list = document.getElementById("listecommissions");
+            lastli = list.lastElementChild;
+            list.removeChild(lastli);
+            //if (liste.lastChild.nodeType==3) liste.removeChild(liste.lastChild);			
+
+        }
+
+     
+	
+</script>
+
+</head>
+<body onclick="ajout()">
+
+<ul id="listecommissions">
+	<li>1kg de farine</li>
+	<li>un pack de lait</li>
+</ul>
+
+<input type="text" id="texte" placeholder ="Entrez du texte">
+<input type="submit" onclick="ajouter()">
+
+<button id="supprimer" onclick="supprimer()"> Supprimer</button>
+
+
+</body>
+</html>
