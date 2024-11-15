@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>Exercice avec localStorage</title>
+<script>
+
+    ajout = document.getElementById("btnajout");
+    purge = document.getElementById("btnpurge");
+
+    ajout.addEventListener("click", function () {
+
+        champsValue = document.getElementById("champ").value;
+        li = document.createElement("li"); 
+        li.textContent = champsValue; 
+        liste.appendChild(li); 
+
+
+
+
+
+
+    })
+
+
+</script>
+</head>
+<body>
+	<label for="champ">Texte à ajouter</label><input id="champ"><br>
+	<button id="btnajout">Ajouter au stockage</button>
+	<button id="btnpurge">Tout supprimer</button>
+	
+	<ul id="liste"></ul>	
+</body>
+</html>

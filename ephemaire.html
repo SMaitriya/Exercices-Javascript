@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<title>Ajout / Suppression d'éléments</title>
+<meta charset="UTF-8">
+<script>
+	
+	function ajout()
+		{
+
+            list = document.getElementById("listecommissions");
+            newli = document.createElement("li");
+            newli.appendChild(document.createTextNode("lala"));
+            list.appendChild(newli);
+
+			
+		
+		}
+	
+</script>
+
+</head>
+<body onclick="ajout()">
+
+<ul id="listecommissions">
+	<li>1kg de farine</li>
+	<li>un pack de lait</li>
+</ul>
+
+</body>
+</html>
